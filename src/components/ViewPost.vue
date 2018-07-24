@@ -13,6 +13,13 @@
     </ul>
     <router-link to="/" class="btn grey">Back</router-link>
     <button class="btn red" @click="deletePost">Delete</button>
+    <div class="fixed-action-btn">
+      <template v-i="title">
+      <router-link v-bind:to="{name: 'edit-post', params: {title: title}}" class="btn-floating btn-large green">
+        <i class="fa fa-pencil"></i>
+      </router-link>
+    </template>
+    </div>
   </div>
 </template>
 
@@ -25,7 +32,7 @@ export default {
       userID: null,
       userName: null,
       userlikers: 0,
-      title: null
+      title: ""
     }
   },
   beforeRouteEnter (to, from, next) {

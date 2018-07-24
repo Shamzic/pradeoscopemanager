@@ -20,7 +20,7 @@ export default new Router({
       component: NewPost
     },
     {
-      path: '/edit/:post_id',
+      path: '/edit/:title',
       name: 'edit-post',
       component: EditPost
     },
