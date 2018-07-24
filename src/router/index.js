@@ -4,6 +4,8 @@ import Dashboard from '@/components/Dashboard'
 import NewPost from '@/components/NewPost'
 import ViewPost from '@/components/ViewPost'
 import EditPost from '@/components/EditPost'
+import ViewPostImage from '@/components/ViewPostImage'
+import EditPostImage from '@/components/EditPostImage'
 
 Vue.use(Router)
 
@@ -20,7 +22,7 @@ export default new Router({
       component: NewPost
     },
     {
-      path: '/edit/:title',
+      path: '/edit-post/:title',
       name: 'edit-post',
       component: EditPost
     },
@@ -28,6 +30,16 @@ export default new Router({
       path: '/:title',
       name: 'view-post',
       component: ViewPost
+    },
+    {
+      path: '/:url',
+      name: 'view-post-image',
+      component: ViewPostImage
+    },
+    {
+      path: '/edit-post-image/:url',
+      name: 'edit-post-image',
+      component: EditPostImage
     },
   ]
 })
