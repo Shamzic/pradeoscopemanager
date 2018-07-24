@@ -1,3 +1,17 @@
+<style lang="css">
+.headmsg {
+    font-style: italic;
+    font-weight: lighter;
+}
+h4 {
+    text-align: center;
+    font-weight: 300;
+}
+html {
+  background-color: #C0C0C0;
+}
+</style>
+
 <template lang="html">
   <div id="new-post">
     <h3>New Post</h3>

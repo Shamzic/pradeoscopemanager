@@ -1,15 +1,15 @@
 <style lang="css">
-
 .headmsg {
     font-style: italic;
     font-weight: lighter;
 }
-
 h4 {
     text-align: center;
     font-weight: 300;
 }
-
+html {
+  background-color: #C0C0C0;
+}
 </style>
 
 <template>
@@ -264,9 +264,3 @@ export default {
 }
 
 </script>
-
-<style>
-html {
-  background-color: #C0C0C0;
-}
-</style>

@@ -1,3 +1,18 @@
+<style lang="css">
+.headmsg {
+    font-style: italic;
+    font-weight: lighter;
+}
+h1 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 300;
+}
+html {
+  background-color: #C0C0C0;
+}
+</style>
+
 <template>
   <div id="view-post-image">
     <ul class="collection with-header">
@@ -66,7 +81,7 @@ export default {
           db.collection('flutter_data').where('url', '==', this.$route.params.url).get().then(querySnapshot => {
             querySnapshot.forEach(doc => {
               doc.ref.delete();
-              this.$router.push('/Dashboard');
+              this.$router.push('/');
             })
           })
         }

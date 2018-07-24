@@ -1,3 +1,18 @@
+<style lang="css">
+.headmsg {
+    font-style: italic;
+    font-weight: lighter;
+}
+h1 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 300;
+}
+html {
+  background-color: #C0C0C0;
+}
+</style>
+
 <template>
   <div id="view-post">
     <ul class="collection with-header">

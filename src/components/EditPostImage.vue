@@ -1,3 +1,17 @@
+<style lang="css">
+.headmsg {
+    font-style: italic;
+    font-weight: lighter;
+}
+h3 {
+    text-align: left;
+    font-weight: 300;
+}
+html {
+  background-color: #C0C0C0;
+}
+</style>
+
 <template lang="html">
   <div id="edit-post-image">
     <h3>Edit Post Image</h3>
